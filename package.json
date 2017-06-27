@@ -1,0 +1,22 @@
+{
+  "name": "WeddingSite",
+  "version": "1.0.0",
+  "description": "Sito per il matrimonio di Ele e Ca",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "harp server src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mendaomn/WeddingSite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mendaomn/WeddingSite/issues"
+  },
+  "homepage": "https://github.com/mendaomn/WeddingSite#readme"
+}
