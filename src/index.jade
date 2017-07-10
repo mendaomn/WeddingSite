@@ -12,80 +12,14 @@ block content
 	hr
 	include templates/_event-info
 	hr
-
-	div(id ="album")
-		h2 Il PRINDUNalbum
-		h3 Abbiamo creato l'Album delle Nostre Nozze, cosi' potremo condividere ogni angolo e ogni attimo della Festa e non perdere nemmeno un sorriso di quel giorno speciale!
-		br
-		|Se partecipi, potremo rivivere il PRINDUMONIO attraverso i tuoi occhi e custodire per sempre tutte le foto che scatterai durante la festa! Il PRINDUNalbum sara' un racconto in cui ognuno di voi avra' una parte, un'inquadratura da mille angolazioni: l'autobiografia di una festa!
-		h3 Come funziona?
-		ol
-			li Scarica quest'app 
-			a(href='http://www.wedshoots.com/it/download?albumId=ITa8856681') wedshoots.
-			li Una volta installata, potrai accedere all'album inserendo il tuo nome e il seguente codice: ITa8856681.
-			li Durante il PRINDUMONIO scatta piu' foto che puoi, caricale nel PRINDUNalbum per condividerle con noi e tutti gli altri invitati.
-
+	include templates/_album
 	hr
-
-	div(id = "rsvp")
-		h1 RSVP
-		h2 Comunicaci se ci sarai!
-		h3 Saremo felicissimi di festeggiare insieme a te il Nostro Giorno Speciale!
-		h4 Dai conferma il prima possibile, ci renderai piu' facile l'organizzazione dei preparativi!
-		form(action="TODO")
-		|Tuo nome: 
-		input(type='text', name='yourName')
-		br
-		br
-		|Nome degli ospiti: 
-		input(type='text', name='guestName')
-		br
-		br
-		|Numero di adulti:
-		input(type='number', name='numAdults')
-		br
-		br
-		|Numero di bambini:
-		input(type='number', name='numKids')
-		br
-		br
-		|Per chiedere informazioni o comunicarci eventuali allergie/intolleranze puoi scriverci qui...
-		br
-		a(href='ele.menduni@gmail.com') ele.menduni@gmail.com
-		|  e 
-		a(href='prinecato@gmail.com') prinecato@gmail.com
-		br
-		| o comunicarcelo telefonicamente.
-
-		br
-		input(type='submit', value='Conferma')
-
+	include templates/_rsvp
 	hr
-
-	div(id = "gifts")
-		h1 Il PRINDUviaggio
-		h2 Viaggiare è come sognare: la differenza è che non tutti, al risveglio, ricordano qualcosa, mentre ognuno conserva calda la memoria della meta da cui è tornato.
-		h3 (Edgar Allan Poe)
-		
-		h3 Se vuoi mandarci a Quel Paese, questa e' la tua occasione...
-		|... puoi contribuire a rendere indimenticabile il nostro Viaggio di Nozze!
-		h4 IBAN XXXXXXXXXXXXX
-		br
-		br
-
+	include templates/_gifts
 	hr
-
-	div(id = "game")
-	h1 PRINDUGAME
-	h1 qui mettiamo un giochino con le nostre facce! yuppi!
-
+	include templates/_game
 	hr
-
-	div(id = "thanksgiving")
-	h1 Dietro ad una grande coppia, c'e' sempre una grande squadra di persone speciali! ;-)
-	h2 Un ringraziamento va alle persone che ci hanno aiutato nei preparativi, che ci hanno supportato e sopportato nella buona e nella cattiva sorte, in salute e in malattia, in un lungo anno di trepidante attesa!
-	h3 Qui mettiamo un collage di foto di chi ci ha aiutato e dei testimoni
-
-	div(id = "book")
-	h1 Il libro delle visite
-	h2 
+	include templates/_thanksgiving
+	hr
+	include templates/_guestbook
