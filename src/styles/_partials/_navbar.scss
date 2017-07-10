@@ -1,115 +1,190 @@
-// Fonts
-$heading-font: 'Oswald', Helvetica, sans-serif;
-$type-font: 'Open Sans', Arial, sans-serif;
-
-// Base font size and margins
-$base-text: 16px;
-$base-margin: $base-text * 1.6;
-
-// Colors
-$color-1: #2FC5CC;
-$color-2: #F06868;
-
-$light: #F4F7F7;
-$dark: darken($color-1, 35);
-$dark-2: darken($color-2, 10);
-
-// Mixins.
-@mixin v-center {
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-@mixin my-transition {
-  @include transition(all .2s ease-in 0s);
-}
-
-@mixin link-border($color, $size:2) {
-  @include border-color(null null $color null);
-  @include border-style(null null solid null);
-  @include border-width(null null rem($size) null);
-}
-
-@mixin form-border($color, $size:4) {
-  @include border-color(null null null $color);
-  @include border-style(null null null solid);
-  @include border-width(null null null rem($size));
-}
-
-@mixin my-h {
-  background-color: $color-1;
-  display: inline-block;
+#nav-bar {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+	height: 100%;
   
-  padding: 0 rem(15);
-}
-
-@mixin section-padding {
-  padding: $base-margin * 4 0;
-}
-
-::selection {
-	background-color: $color-1;
-}
-
-::-moz-selection {
-	background-color: $color-1;
-}
-
-* {
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-body {
-	background-color: $dark;
-	
-	font-family: $type-font;
-	font-size: $base-text;
-
-	color: $light;
-}
-
-p {
-	margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: $heading-font;
-	font-size: rem(32);
-	font-weight: 300;
+  z-index: 9999;
   
-	margin-top: 0;
-	margin-bottom: $base-margin;
-}
-
-a,
-a:link,
-a:visited,
-a:active {
-  text-decoration: none;
-  color: $color-1;
-  
-  
-  
-  &:hover {
-   
+  @include media($bp-medium) {
+    display: block;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    background-color: $color-2;
   }
-}
+  
+  @include media($bp-mobile) {
+    display: block;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    background-color: $color-2;
+  }
+  
+  @include media($bp-max-h) {
+    display: block;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    background-color: $color-2;
+  }
+  
+  .nav-container {
+    @include v-center;
+    padding: rem(50);
+    text-align: center;
+    
+    @include media($bp-medium) {
+      transform: none;
+      top: 0;
+      padding: 0;
+    }
+    
+    @include media($bp-mobile) {
+      transform: none;
+      top: 0;
+      padding: 0;
+    }
+    
+    @include media($bp-max-h) {
+      transform: none;
+      top: 0;
+      padding: 0;
+    }
+    
+    .toggle-nav {
+      display: none;
+      position: fixed;
+      z-index: 9999;
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+      top: 0;
+      left: 0;
 
-#container {
-  position: relative;
-}
+      height: auto;
+      width: 100%;
+      text-align: center;
+
+      background-color: $color-2;
+      padding: rem(10);
+
+      @include media($bp-mobile) {
+        display: block;
+        position: relative;
+      }
+
+      i {
+        color: $light;
+        font-size: rem(48);
+
+        &:hover {
+          border: none;
+        }
+
+        &:active {
+          color: $dark;
+        }
+      } // and-i
+    } // end-toggle-nav
+    
+    ul {
+      @include media($bp-mobile) {
+        display: none;
+      }
+
+      li {
+        text-align: center;
+        
+        @include media($bp-medium) {
+          display: inline-table;
+        }
+        
+        @include media($bp-max-h) {
+          display: inline-table;
+        }
+        
+        @include media($bp-mobile) {
+          display: block;
+        }
+
+        a {
+          color: $light;
+          display: block;
+          text-transform: uppercase;
+          
+          padding: rem(15) rem(15);
+          
+          @include media($bp-medium) {
+            cursor: pointer;
+          }
+          
+          @include media($bp-max-h) {
+            cursor: pointer;
+          }
+          
+          @include media($bp-mobile) {
+            font-size: rem(32);
+            padding: rem(15) rem(10);
+            cursor: pointer;
+          }
+          
+          &:hover {
+            border: none;
+            color: $light;
+            
+            @include media($bp-medium) {
+              color: $dark;
+            }
+            
+            @include media($bp-mobile) {
+              color: $light;
+            }
+            
+            @include media($bp-max-h) {
+              color: $dark;
+            }
+            
+          } // end-hover
+          
+        } // end-a
+
+        &.active {
+
+          a {
+            background-color: $color-2;
+            color: $light;
+            
+            @include media($bp-medium) {
+              background-color: $dark-2;
+              border: none;
+              color: $light;
+            }
+            
+            @include media($bp-mobile) {
+              background-color: $dark-2;
+              color: $light;
+            }
+            
+            @include media($bp-max-h) {
+              background-color: $color-2;
+              color: $light;
+            }
+            
+            &:hover {
+              @include media($bp-max-h) {
+                color: $dark;
+              }
+            }
+            
+          } // end-a
+
+        } // end-active
+
+      } // end-li
+
+    } // end-ul
+    
+  } // end-nav-container
+  
+} // end-nav-bar
