@@ -1,2 +1,28 @@
 header
-  font-size: 35px
+  height: calc(100% - 65px)
+  background: #333
+  -webkit-perspective: 1500px
+  perspective: 1500px
+  perspective-origin: center bottom
+
+.hero
+  position: relative
+  background: #333 url(http://jstougaard.com/assets/images/bg-hero2.jpg) no-repeat center center
+  background-size: cover
+  height: 100%
+  width: 100%
+  -webkit-transform-origin: 50% 100%
+  transform-origin: 50% 100%
+  -webkit-transform-style: preserve-3d
+  transform-style: preserve-3d
+  display: table
+  .overlay
+    content: ""
+    display: block
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    opacity: 0
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%)
