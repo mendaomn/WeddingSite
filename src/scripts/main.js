@@ -6,7 +6,7 @@ var minutiEl = document.getElementById('cd-minuti');
 var secondiEl = document.getElementById('cd-secondi');
 
 // Data di arrivo
-var weddingDate = new Date( 2018, 6, 7 );
+var weddingDate = new Date( 2018, 6, 7 ); // i mesi partono da 0
 
 // Primo giro senza aspettare un secondo
 updateCountdown();
