@@ -4,4 +4,32 @@
   right: 0
   bottom: 0
   left: 0
-  background-color: grey
+  background-color: lightgrey
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 25px
+
+    li
+      margin-bottom: 10px
+      font-weight: bold
+      text-transform: uppercase
+      color: crimson
+
+      &:last-child
+        margin-bottom: 0
+
+      &.active
+        position: relative
+        color: darkcyan
+
+        &::before
+          content: '#'
+          position: absolute
+          left: -15px
+          // margin-left: -100%
+
+      a
+        text-decoration: none
+        color: currentColor
