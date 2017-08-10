@@ -1,4 +1,4 @@
-include _header
+//- include _header
 
 html
   head
@@ -6,7 +6,13 @@ html
     block head
     
   body
-    block content
+    .site-container
+      .side-content
+        include _navbar.jade
+        
+      .main-content
+        block content
+          
     script(src="scripts/carosel.js")
     script(src="scripts/countdown.min.js")
     script(src="scripts/main.js")
