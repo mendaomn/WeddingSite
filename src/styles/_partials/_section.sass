@@ -22,3 +22,22 @@ section
       width: 220px
       height: 1px
       border-top: 4px double $title-color
+
+  .darkTitle
+    margin: 0
+    letter-spacing: -4px
+    font-size: $fs-title
+    font-weight: 700
+    color: $blues
+    text-transform: uppercase
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5)
+
+    &::before,
+    &::after
+      content: ""
+      display: block
+      margin: 20px auto
+      width: 220px
+      height: 1px
+      border-top: 4px double $blues
+
