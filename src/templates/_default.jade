@@ -4,17 +4,12 @@ html
   head
     title Wedding
     block head
-    link(href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet")
     
   body
-    .site-container
-      .side-content
-        include _navbar.jade
-        
-      .main-content
-        block content
+    block content
           
-    script(src="scripts/carosel.js")
     script(src="scripts/countdown.min.js")
     script(src="scripts/main.js")
     

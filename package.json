@@ -6,7 +6,9 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "start": "harp server src"
+    "start": "harp server src",
+    "build": "harp compile src dist",
+    "deploy": "surge dist -d eleonoracarmine.surge.sh"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,60 @@
+$gf-fs-l: 27px;
+$gf-fs-m: 18px;
+
+$gf-title-c: $mineshaft;
+$gf-embed-bg: #FAFAFA;
+$gf-accent-c: $tiffany;
+
+.c-gf-panels {
+  display: flex;
+}
+
+.c-gf-panel {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  &.left {
+    min-height: 400px;
+    background-image: url(https://www.nationalparks.org/sites/default/files/yellowstone-header.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &.right {
+    @include _boxed;
+
+    box-shadow: none;
+  }
+}
+
+.c-gf-title {
+  font-size: $gf-fs-l;
+  color: $gf-title-c;
+  text-transform: uppercase;
+} 
+
+.c-gf-subtitle {
+  margin-top: 15px;
+  font-size: $gf-fs-m;
+  text-transform: uppercase;
+} 
+
+.c-gf-separator {
+  margin-top: 15px;
+  width: 50px;
+  height: 3px;
+  background-color: white;
+}
+
+.c-gf-text {
+  margin-top: 15px;
+
+  a {
+    color: $gf-accent-c;
+  }
+}
+
+.c-gf-embed {
+  background-color: $gf-embed-bg;
+}

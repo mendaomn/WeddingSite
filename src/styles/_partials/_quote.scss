@@ -1,0 +1,27 @@
+$q-fs-m: 20px;
+$q-fs-s: 16px;
+
+$q-bg: $mineshaft;
+$q-c: white;
+
+.c-quote {
+  padding: 50px;
+  background-color: $q-bg;
+  color: $q-c;
+  text-align: center;
+}
+
+.c-quote--wrapper {
+  @include _wrapper;
+}
+
+.c-quote-text {
+  font-size: $q-fs-m;
+  text-transform: uppercase;
+  line-height: 27px;
+}
+
+.c-quote-author {
+  margin-top: 15px;
+  font-size: $q-fs-s;
+}

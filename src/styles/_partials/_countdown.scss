@@ -1,0 +1,66 @@
+$cd-head-bg: $mineshaft;
+$cd-img-w: 25px;
+
+.c-countdown {
+  display: flex;
+  height: $cd-h;
+  color: white;
+  text-transform: uppercase;
+}
+
+.c-cd-head {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  background-color: $cd-head-bg;
+  flex: 2;
+}
+
+.c-cd-head-icon {
+  width: $cd-img-w;
+  height: $cd-img-w;
+}
+
+.c-cd-head-label {
+  margin-left: 15px;
+}
+
+.c-cd-head-label--strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.c-cd-group {
+  padding: 25px;
+  text-align: center;
+  flex: 1;
+
+  &.one {
+    background-color: $tiffany;
+  }
+
+  &.two {
+    background-color: lighten($tiffany, 1);
+  }
+
+  &.three {
+    background-color: lighten($tiffany, 2);
+  }
+
+  &.four {
+    background-color: lighten($tiffany, 3);
+  }
+
+  &.five {
+    background-color: lighten($tiffany, 4);
+  }
+}
+
+.c-cd-value {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.c-cd-label {
+  font-size: 20px;
+}

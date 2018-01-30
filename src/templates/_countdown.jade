@@ -1,16 +1,22 @@
-.countdown-container
-  .countdown-group
-    #cd-mesi
-    .countdown-label  mesi 
-  .countdown-group
-    #cd-giorni
-    .countdown-label  giorni 
-  .countdown-group
-    #cd-ore
-    .countdown-label  ore 
-  .countdown-group
-    #cd-minuti
-    .countdown-label  minuti 
-  .countdown-group
-    #cd-secondi
-    .countdown-label  secondi 
+.c-countdown
+  .c-cd-head
+    img.c-cd-head-icon(src="images/rings.svg")
+    .c-cd-head-label 
+      | Giorni mancanti al
+      .c-cd-head-label--strong PRINDUMONIO
+
+  .c-cd-group.one
+    .c-cd-value#cd-mesi
+    .c-cd-label  mesi 
+  .c-cd-group.two
+    .c-cd-value#cd-giorni
+    .c-cd-label  giorni 
+  .c-cd-group.three
+    .c-cd-value#cd-ore
+    .c-cd-label  ore 
+  .c-cd-group.four
+    .c-cd-value#cd-minuti
+    .c-cd-label  minuti 
+  .c-cd-group.five(style="display: none;")
+    .c-cd-value#cd-secondi
+    .c-cd-label  secondi 

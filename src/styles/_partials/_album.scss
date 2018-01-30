@@ -1,0 +1,66 @@
+$pa-box-w: 650px;
+$pa-fs-l: 27px;
+$pa-fs-m: 18px;
+
+$pa-box-title-c: $mineshaft;
+$pa-accent-c: $tiffany;
+$pa-bg: $tiffany;
+
+.c-prindunalbum {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $pa-bg;
+  // background-image: url(https://www.gavick.com/documentation/wp-content/uploads/2013/09/grid_screen.png);
+  // background-size: cover;
+  // background-position: center center;
+}
+
+.c-pa-box--wrapper {
+  @include _wrapper;
+
+  display: flex;
+  justify-content: center;
+}
+
+.c-pa-box {
+  @include _boxed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: $pa-box-w;
+  text-align: center;
+}
+
+.c-pa-box-title {
+  color: $pa-box-title-c;
+  font-size: $pa-fs-l;
+  text-transform: uppercase;
+}
+
+.c-pa-box-subtitle {
+  margin-top: 20px;
+  color: $pa-box-title-c;
+  font-size: $pa-fs-m;
+  text-transform: uppercase;
+}
+
+.c-pa-box-text {
+  margin-top: 15px;
+
+  .accent {
+    color: $pa-accent-c;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .c-pa-box-list {
+    margin: 0 auto;
+    text-align: left;
+    max-width: 455px;
+
+    li {
+      margin-top: 5px;
+    }
+  }
+}
