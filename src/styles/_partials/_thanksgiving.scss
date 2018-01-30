@@ -1,0 +1,121 @@
+$tg-h: 520px;
+$tg-box-w: 450px;
+$tg-fs-l: 27px;
+$tg-fs-m: 18px;
+
+$tg-box-title-c: $mineshaft;
+$tg-accent-c: $tiffany;
+$tg-bg: $tiffany;
+
+.c-thanksgiving {
+  height: $tg-h;
+}
+
+.c-tg-panels {
+  display: flex;
+}
+
+.c-tg-panel {
+  &.one {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: $tg-bg;
+    flex: 2;
+  }
+
+  &.two {
+    flex: 3;
+  }
+}
+
+.c-tg-box {
+  @include _boxed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: $tg-box-w;
+  text-align: center;
+}
+
+.c-tg-box-title {
+  color: $tg-box-title-c;
+  font-size: $tg-fs-l;
+  text-transform: uppercase;
+}
+
+.c-tg-box-subtitle {
+  margin-top: 20px;
+  color: $tg-box-title-c;
+  font-size: $tg-fs-m;
+  text-transform: uppercase;
+}
+
+.c-tg-box-text {
+  margin-top: 15px;
+
+  .accent {
+    color: $tg-accent-c;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .c-tg-box-list {
+    margin: 0 auto;
+    text-align: left;
+    max-width: 455px;
+
+    li {
+      margin-top: 5px;
+    }
+  }
+}
+
+.c-tg-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.c-tg-pic {
+  margin-right: 1px;
+  width: calc((100% - 2px) / 3);
+  height: calc((100% - 1px) / 2);
+  background-size: cover;
+  background-position: center center;
+
+  &.margin {
+    margin-bottom: 1px;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &.ale {
+    background-image: url(http://vh1production.s3.amazonaws.com/wp-content/uploads/2017/01/PhilCollins2.jpg);
+  }
+
+  &.eli {
+    background-image: url(https://images.newrepublic.com/5719d9f51a4bc08579132cdcbd208bc91b588ca8.jpeg);
+  }
+
+  &.fra {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn3PfFOSatXqxOTdoRhrFeGJecKO0dzUGMWyaBL_AkaHeD_igGjg);
+  }
+
+  &.neil {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnIDRKTZV3LwBAho3tQzVG0HRlz07pz_FMIB3z-OQGFK5T8vp6gQ);
+  }
+
+  &.francesco {
+    background-image: url(http://i.f1g.fr/media/ext/805x453_crop/www.lefigaro.fr/medias/2010/09/13/fa0df312-bf51-11df-bf16-1f67af044bf0.jpg);
+  }
+
+  &.zuli {
+    background-image: url(https://media.gettyimages.com/photos/english-singer-songwriter-and-musician-phil-collins-new-york-city-picture-id147999796);
+  }
+
+}
