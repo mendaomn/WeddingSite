@@ -4,19 +4,13 @@ block head
 	link(rel="stylesheet" href="/styles/home.css")
 
 block content
+	include templates/_navbar
 	include templates/_masthead
+	include templates/_countdown
 	include templates/_welcome
-	include templates/_intro
+	include templates/_quote
 	include templates/_event-info
-	//- hr
-	//- include templates/_album
-	//- hr
-	//- include templates/_rsvp
-	//- hr
-	//- include templates/_gifts
-	//- hr
-	//- include templates/_game
-	//- hr
-	//- include templates/_thanksgiving
-	//- hr
-	//- include templates/_guestbook
+	include templates/_album
+	include templates/_rsvp
+	include templates/_gifts
+	include templates/_thanksgiving

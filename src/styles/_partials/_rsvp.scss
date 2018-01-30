@@ -1,0 +1,60 @@
+$rsvp-fs-l: 27px;
+$rsvp-fs-m: 18px;
+
+$rsvp-title-c: $mineshaft;
+$rsvp-embed-bg: #FAFAFA;
+$rsvp-accent-c: $tiffany;
+
+.c-rsvp-panels {
+  display: flex;
+}
+
+.c-rsvp-panel {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  
+  &.left {
+    min-height: 400px;
+    background-image: url(https://www.theknot.com/assets/topic_pages/wedding-vows-ceremony-de390170d87b481e073afef3e03a2c7b4a5d7e0b1de1036a40816f80fa85a6cd.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &.right {
+    @include _boxed;
+
+    box-shadow: none;
+  }
+}
+
+.c-rsvp-title {
+  font-size: $rsvp-fs-l;
+  color: $rsvp-title-c;
+  text-transform: uppercase;
+} 
+
+.c-rsvp-subtitle {
+  margin-top: 15px;
+  font-size: $rsvp-fs-m;
+  text-transform: uppercase;
+} 
+
+.c-rsvp-separator {
+  margin-top: 15px;
+  width: 50px;
+  height: 3px;
+  background-color: white;
+}
+
+.c-rsvp-text {
+  margin-top: 15px;
+
+  a {
+    color: $rsvp-accent-c;
+  }
+}
+
+.c-rsvp-embed {
+  background-color: $rsvp-embed-bg;
+}

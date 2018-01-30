@@ -1,0 +1,66 @@
+$ei-fs-l: 27px;
+$ei-fs-m: 18px;
+$ei-bg-1: $mineshaft;
+$ei-bg-2: $tiffany;
+
+.c-eventInfo {
+  display: flex;
+  color: white;
+}
+
+.c-ei-panel {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  flex: 1;
+}
+
+.c-ei-panel-header {
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+}
+
+.c-ei-image {
+  width: 100%;
+  max-height: 100%;
+}
+
+.c-ei-panel-body {
+  padding: 50px;
+}
+
+.c-ei-panel.one {
+  .c-ei-panel-body {
+    background-color: $ei-bg-1;
+  }
+}
+
+.c-ei-panel.two {
+  .c-ei-panel-body {
+    background-color: $ei-bg-2;
+    order: -1;
+  }
+}
+
+.c-ei-title {
+  font-size: $ei-fs-l;
+  text-transform: uppercase;
+} 
+
+.c-ei-subtitle {
+  margin-top: 15px;
+  font-size: $ei-fs-m;
+  text-transform: uppercase;
+} 
+
+.c-ei-separator {
+  margin-top: 15px;
+  width: 50px;
+  height: 3px;
+  background-color: white;
+}
+
+.c-ei-text {
+  margin-top: 15px;
+}

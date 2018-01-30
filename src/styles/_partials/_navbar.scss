@@ -1,0 +1,48 @@
+$nav-h: 75px;
+$nav-item-m: 15px;
+
+.c-nav {
+  position: relative;
+  background-color: rgba($mineshaft, 0.4);
+  width: 100%;
+  z-index: 99;
+}
+
+.c-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: $nav-h;
+}
+
+.c-nav-item {
+  display: flex;
+  align-items: center;
+  margin-left: $nav-item-m;
+  text-transform: uppercase;
+  color: white;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    margin-left: $nav-item-m;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  &:last-child {
+    &::after {
+      content: unset;
+    }
+  }
+}
+
+.c-nav-link {
+  color: currentColor;
+  text-decoration: none;
+}

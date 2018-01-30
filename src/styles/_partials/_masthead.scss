@@ -1,0 +1,49 @@
+$mh-bg: $darkgray;
+$mh-fs-l: 65px;
+$mh-fs-m: 32px;
+
+
+.c-masthead {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -$nav-h;
+  padding-top: $nav-h;
+  width: 100%;
+  height: calc(100vh - #{$cd-h});
+  background-image: url(http://wlpapers.com/images/wedding-couple-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Dancing Script', curisve;
+  color: white;
+
+  /* &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($mh-bg, 0.4);
+  }
+
+  & > * {
+    position: relative;
+  } */
+}
+
+.c-mh-title {
+  font-size: $mh-fs-l;
+  line-height: 1;
+  text-align: right;
+  text-shadow: 0 0 3px rgba($mineshaft, 0.4);
+}
+
+.c-mh-subtitle {
+  margin-top: 25px;
+  font-size: $mh-fs-m;
+  line-height: 1;
+  text-shadow: 0 0 3px rgba($mineshaft, 0.4);
+}

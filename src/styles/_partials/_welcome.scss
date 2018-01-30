@@ -1,0 +1,39 @@
+$w-box-w: 400px;
+$w-fs-l: 27px;
+
+$w-box-title-c: $mineshaft;
+
+.c-welcome {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url(https://timenewsfeed.files.wordpress.com/2013/08/wedding-waterski_carb2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.c-welcome-box--wrapper {
+  @include _wrapper;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-welcome-box {
+  @include _boxed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: $w-box-w;
+  text-align: center;
+}
+
+.c-welcome-box-title {
+  color: $w-box-title-c;
+  font-size: $w-fs-l;
+  text-transform: uppercase;
+}
+
+.c-welcome-box-text {
+  margin-top: 15px;
+}
