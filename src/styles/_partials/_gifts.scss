@@ -1,36 +1,50 @@
 $gf-fs-l: 27px;
 $gf-fs-m: 18px;
+$gf-bg-1: $mineshaft;
+$gf-bg-2: $tiffany;
 
-$gf-title-c: $mineshaft;
-$gf-embed-bg: #FAFAFA;
-$gf-accent-c: $tiffany;
-
-.c-gf-panels {
+.c-gifts {
   display: flex;
+  color: white;
 }
 
 .c-gf-panel {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  flex: 1;
+}
 
-  &.left {
-    min-height: 400px;
-    background-image: url(https://www.nationalparks.org/sites/default/files/yellowstone-header.jpg);
-    background-size: cover;
-    background-position: center center;
+.c-gf-panel-header {
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  flex: 1;
+}
+
+.c-gf-image {
+  width: 100%;
+  max-height: 100%;
+}
+
+.c-gf-panel-body {
+  padding: 50px;
+}
+
+.c-gf-panel.one {
+  .c-gf-panel-body {
+    background-color: $gf-bg-1;
   }
+}
 
-  &.right {
-    @include _boxed;
-
-    box-shadow: none;
+.c-gf-panel.two {
+  .c-gf-panel-body {
+    background-color: $gf-bg-2;
+    order: -1;
   }
 }
 
 .c-gf-title {
   font-size: $gf-fs-l;
-  color: $gf-title-c;
   text-transform: uppercase;
 } 
 
@@ -49,12 +63,4 @@ $gf-accent-c: $tiffany;
 
 .c-gf-text {
   margin-top: 15px;
-
-  a {
-    color: $gf-accent-c;
-  }
-}
-
-.c-gf-embed {
-  background-color: $gf-embed-bg;
 }

@@ -10,9 +10,9 @@ $pa-bg: $tiffany;
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: $pa-bg;
-  // background-image: url(https://www.gavick.com/documentation/wp-content/uploads/2013/09/grid_screen.png);
-  // background-size: cover;
-  // background-position: center center;
+  background-image: url(/images/Immagine9.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 .c-pa-box--wrapper {
@@ -35,6 +35,7 @@ $pa-bg: $tiffany;
 .c-pa-box-title {
   color: $pa-box-title-c;
   font-size: $pa-fs-l;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -51,7 +52,7 @@ $pa-bg: $tiffany;
   .accent {
     color: $pa-accent-c;
     font-weight: bold;
-    text-transform: uppercase;
+    // text-transform: uppercase;
   }
 
   .c-pa-box-list {

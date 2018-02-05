@@ -11,13 +11,13 @@ $ei-bg-2: $tiffany;
 .c-ei-panel {
   display: flex;
   flex-direction: column;
-  height: 600px;
   flex: 1;
 }
 
 .c-ei-panel-header {
   background-size: cover;
   background-position: center;
+  min-height: 300px;
   flex: 1;
 }
 

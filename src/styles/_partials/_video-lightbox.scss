@@ -1,0 +1,34 @@
+$vlb-bg: black;
+
+.c-video-lightbox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.c-vlb-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba( $vlb-bg, 0.95 );
+}
+
+.c-vlb-iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-vlb-iframe {
+  width: 80%;
+  height: 80%;
+}

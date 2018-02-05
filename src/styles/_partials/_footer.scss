@@ -1,0 +1,52 @@
+$ft-fs-m: 24px;
+$ft-fs-s: 16px;
+
+$ft-bg: white;
+$ft-c: $mineshaft;
+
+.c-footer {
+  position: relative;
+  background-color: $ft-bg;
+  background-image: url(/images/footer.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: $ft-c;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba( $ft-bg, 0.65 );
+  }
+
+  & > * {
+    position: relative;
+  }
+}
+
+.c-footer--wrapper {
+  @include _wrapper;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  
+}
+
+.c-footer-text {
+  font-size: $ft-fs-m;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 27px;
+}
+
+.c-footer-author {
+  margin-top: 15px;
+  font-size: $ft-fs-s;
+}

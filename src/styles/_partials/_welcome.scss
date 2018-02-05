@@ -6,7 +6,7 @@ $w-box-title-c: $mineshaft;
 .c-welcome {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url(https://timenewsfeed.files.wordpress.com/2013/08/wedding-waterski_carb2.jpg);
+  background-image: url(/images/Immagine1.png);
   background-size: cover;
   background-position: center center;
 }
@@ -31,6 +31,7 @@ $w-box-title-c: $mineshaft;
 .c-welcome-box-title {
   color: $w-box-title-c;
   font-size: $w-fs-l;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
